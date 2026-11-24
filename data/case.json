@@ -14,6 +14,46 @@
       "id": "FC-3",
       "text": "另一船海星：今晨南礁第二网，货箱 1-3。",
       "kind": "market-update"
+    },
+    {
+      "id": "FC-10",
+      "kind": "vessel-register",
+      "text": "海星船号V1和V2是不同船，V1昨晚石湾口第三网，V2今晨南礁第二网。"
+    },
+    {
+      "id": "FC-11",
+      "kind": "chain-of-custody",
+      "text": "样LAB1来自V1第三网箱4鳃组织，方法METHOD-A，仅测目标残留X。箱5-9未送检。"
+    },
+    {
+      "id": "FC-12",
+      "kind": "lab-method",
+      "text": "METHOD-A阴性仅说明该份组织样本X低于方法检出限，不覆盖Y或其他箱。不得由一箱阴性推断全网阴性。"
+    },
+    {
+      "id": "FC-13",
+      "kind": "market-log",
+      "text": "市场M1收到V1箱4-6，M2收到V1箱7-9，V2箱1-3到M1，批次凭船号、作业和箱号区分。"
+    },
+    {
+      "id": "FC-14",
+      "kind": "notice",
+      "text": "十时向M1发V1箱4-6暂缓通知H1，向M2发V1箱7-9暂缓通知H2，未对V2发通知。"
+    },
+    {
+      "id": "FC-15",
+      "kind": "lab-result",
+      "text": "十一时箱5肌肉组织检出X，箱6未检；该结果不涉及鳃样LAB1。"
+    },
+    {
+      "id": "FC-16",
+      "kind": "correction",
+      "text": "十一时半样本交接更正：FC15其实为V2箱1，错贴V1箱5标签；LAB1来源未变。"
+    },
+    {
+      "id": "FC-17",
+      "kind": "sampling-request",
+      "text": "采样员对V1箱5-9和V2箱2-3分别提出补样，尚未采集。"
     }
   ],
   "waters": [
@@ -29,5 +69,51 @@
       "name": "南礁"
     }
   ],
-  "case_id": "fishery-1"
+  "case_id": "fishery-1",
+  "context": {
+    "catch_groups": [
+      {
+        "id": "V1-N3",
+        "boxes": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "vessel": "V1"
+      },
+      {
+        "id": "V2-N2",
+        "boxes": [
+          1,
+          2,
+          3
+        ],
+        "vessel": "V2"
+      }
+    ],
+    "holds": [
+      {
+        "id": "H1",
+        "state": "issued",
+        "market": "M1",
+        "source": "FC-14"
+      },
+      {
+        "id": "H2",
+        "state": "issued",
+        "market": "M2",
+        "source": "FC-14"
+      }
+    ],
+    "sampling": [
+      {
+        "id": "SAM1",
+        "state": "pending",
+        "source": "FC-17"
+      }
+    ]
+  }
 }
