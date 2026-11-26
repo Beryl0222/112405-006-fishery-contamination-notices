@@ -1,6 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "case-workbench"
-version = "0.1.0"
-description = "合成文本资料工作区"
+version = "0.2.0"
+description = "沿岸检验站中文记录的批次归属、检测适用范围与只追加处置台账（合成演练）"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+fishery-station = "fishery_station.cli:main"
+
+[tool.setuptools]
+packages = ["fishery_station"]

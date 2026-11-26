@@ -1,0 +1,2140 @@
+{
+  "case_id": "fishery-1",
+  "reference_now": "2026-11-26T12:00:00+08:00",
+  "disclaimer": "全部海域、船名、人员、机构、检测编号与结果均为合成演练资料，不对应真实主体或业务决定。",
+  "policy": {
+    "name": "合成演练批次处置规则 v1",
+    "release_accepted_verdicts": [
+      "not_detected"
+    ],
+    "release_accepted_tissues": [
+      "肌肉组织",
+      "可食部"
+    ],
+    "release_accepted_methods": [
+      "SYN-LCMS-01"
+    ],
+    "detected_triggers_whole_lot_suspend": true,
+    "unverified_link_triggers_market_hold": true,
+    "default_sampling_suggestion": "按箱采集肌肉/可食部，使用 SYN-LCMS-01 方法检测目标残留；采样记录须写明船号、水域、日期、网次与箱号。",
+    "note": "“未检出”仅对实际送检的样品部位、指标和方法有效，不自动覆盖整箱、整网或整船；本规则仅用于合成演练。"
+  },
+  "waters": [
+    {
+      "id": "A-1",
+      "name": "石湾外口",
+      "aliases": [
+        "石湾口"
+      ],
+      "note": null
+    },
+    {
+      "id": "A-2",
+      "name": "南礁",
+      "aliases": [],
+      "note": null
+    },
+    {
+      "id": "A-3",
+      "name": "石湾礁",
+      "aliases": [],
+      "note": "与 A-1 名称相近，但不是同一水域；资料未把“石湾”或“石湾一带”列为其别名。"
+    }
+  ],
+  "boats": [
+    {
+      "id": "B-1",
+      "name": "海星",
+      "registry_no": "SYN-ZY-0107（合成船号）",
+      "operator": "陈阿海",
+      "aka": [
+        "老陈"
+      ],
+      "role": "船长兼船主",
+      "contact": "合成演练电话 138-0000-0107",
+      "berth": "石湾合成码头 3 号泊位",
+      "appears_in": [
+        "FC-1",
+        "FC-7",
+        "FC-8",
+        "FC-13"
+      ],
+      "note": "FC-1 与 FC-8 是同一艘“海星”，以登记船号及“老陈”互认为准。"
+    },
+    {
+      "id": "B-2",
+      "name": "海星",
+      "registry_no": "SYN-ZY-0226（合成船号）",
+      "operator": "林秀",
+      "aka": [
+        "阿秀"
+      ],
+      "role": "船长",
+      "contact": "合成演练电话 138-0000-0226",
+      "berth": "南礁补网点 2 号浮排",
+      "appears_in": [
+        "FC-3"
+      ],
+      "note": "FC-3 原文写明“另一船海星”，与 B-1 重名但不是同一船，批次不得互并。"
+    },
+    {
+      "id": "B-3",
+      "name": "闽沙渔运06",
+      "registry_no": "闽沙渔运06（合成编号）",
+      "operator": "周德发",
+      "aka": [
+        "周老大"
+      ],
+      "role": "船主",
+      "contact": "合成演练电话 139-0000-0006",
+      "berth": "石湾礁临时卸货点",
+      "appears_in": [
+        "FC-7",
+        "FC-10",
+        "FC-11",
+        "FC-13"
+      ],
+      "note": "FC-7 中的候选邻船；FC-13 已排除其与“昨天那片网”的关联。"
+    }
+  ],
+  "raw_records": [
+    {
+      "id": "FC-1",
+      "text": "石湾外口昨晚第三网，鲳鱼箱 4-9；船名海星。",
+      "kind": "catch-note"
+    },
+    {
+      "id": "FC-2",
+      "text": "石湾口样本未检出目标残留，样品为 FC-1 箱 4 的鳃组织。",
+      "kind": "lab-result"
+    },
+    {
+      "id": "FC-3",
+      "text": "另一船海星：今晨南礁第二网，货箱 1-3。",
+      "kind": "market-update"
+    },
+    {
+      "id": "FC-4",
+      "kind": "lab-result",
+      "received_at": "2026-11-26T09:10:00+08:00",
+      "text": "化验单 SYN-LAB-118：FC-1 箱 7 肌肉组织按 SYN-LCMS-01 方法检测，目标残留结果为检出。"
+    },
+    {
+      "id": "FC-5",
+      "kind": "lab-result",
+      "received_at": "2026-11-26T09:25:00+08:00",
+      "text": "化验单 SYN-LAB-121：FC-1 箱 5 肌肉组织按 SYN-LCMS-01 方法检测，目标残留未检出。"
+    },
+    {
+      "id": "FC-6",
+      "kind": "lab-result",
+      "received_at": "2026-11-26T09:40:00+08:00",
+      "text": "化验单 SYN-LAB-122：FC-1 箱 6 肌肉组织按 SYN-LCMS-01 方法检测，目标残留未检出。"
+    },
+    {
+      "id": "FC-7",
+      "kind": "voice-transcript",
+      "received_at": "2026-11-26T09:55:00+08:00",
+      "text": "语音转写（海星船老陈）：昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。"
+    },
+    {
+      "id": "FC-8",
+      "kind": "market-update",
+      "received_at": "2026-11-26T10:10:00+08:00",
+      "text": "市场补报：海星（老陈船）昨天傍晚在石湾外口的第二网，鲳鱼货箱 1-3，今晨已进入平湖合成水产市场 A12 摊位。"
+    },
+    {
+      "id": "FC-9",
+      "kind": "lab-result",
+      "received_at": "2026-11-26T10:35:00+08:00",
+      "text": "化验单 SYN-LAB-124：FC-1 箱 8 肌肉组织按 SYN-LCMS-01 方法检测，目标残留未检出。"
+    },
+    {
+      "id": "FC-10",
+      "kind": "catch-note",
+      "received_at": "2026-11-26T11:00:00+08:00",
+      "text": "石湾礁昨天下午第一网，带鱼箱 11-12；船名闽沙渔运06，货在船上待售。"
+    },
+    {
+      "id": "FC-11",
+      "kind": "voice-transcript",
+      "received_at": "2026-11-26T11:20:00+08:00",
+      "text": "语音转写：闽沙渔运06 的周老大说，前天还在石湾一带下过一网，箱数记不清。"
+    },
+    {
+      "id": "FC-12",
+      "kind": "lab-result",
+      "received_at": "2026-11-26T11:40:00+08:00",
+      "text": "化验单 SYN-LAB-126：应补检要求，对 FC-1 箱 4 肌肉组织按 SYN-LCMS-01 方法采样检测，目标残留未检出；FC-2 的鳃组织结果不覆盖该肌肉部位。"
+    },
+    {
+      "id": "FC-13",
+      "kind": "verification",
+      "received_at": "2026-11-26T11:55:00+08:00",
+      "text": "采样核查 SV-1：经核对潮汐、网次与船名，FC-7 所说“昨天那片网”已确认是 FC-8 所报昨天傍晚第二网（海星老陈船）；与 FC-10 闽沙渔运06 的作业无关。两个网次仍分别建立批次、不得合并。"
+    }
+  ],
+  "parsed": [
+    {
+      "record_id": "FC-1",
+      "kind": "catch-note",
+      "text": "石湾外口昨晚第三网，鲳鱼箱 4-9；船名海星。",
+      "refs": [],
+      "lab_no": null,
+      "cued_boat_name": "海星",
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [
+        "石湾外口"
+      ],
+      "unresolved_area_mentions": [],
+      "haul": {
+        "seq": 3,
+        "time_phrase": "昨晚",
+        "event_date": "2026-11-25",
+        "part_of_day": "夜间",
+        "raw": "第三网"
+      },
+      "extra_hauls": [],
+      "species": [
+        "鲳鱼"
+      ],
+      "boxes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-2",
+      "kind": "lab-result",
+      "text": "石湾口样本未检出目标残留，样品为 FC-1 箱 4 的鳃组织。",
+      "refs": [
+        "FC-1"
+      ],
+      "lab_no": null,
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [
+        "石湾口"
+      ],
+      "unresolved_area_mentions": [],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        4
+      ],
+      "verdict": "not_detected",
+      "analyte": "目标残留",
+      "tissue": "鳃组织",
+      "method": null,
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": [
+        "原文未载明检测方法"
+      ]
+    },
+    {
+      "record_id": "FC-3",
+      "kind": "market-update",
+      "text": "另一船海星：今晨南礁第二网，货箱 1-3。",
+      "refs": [],
+      "lab_no": null,
+      "cued_boat_name": "海星",
+      "another_boat": true,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [
+        "南礁"
+      ],
+      "unresolved_area_mentions": [],
+      "haul": {
+        "seq": 2,
+        "time_phrase": "今晨",
+        "event_date": "2026-11-26",
+        "part_of_day": "早晨",
+        "raw": "第二网"
+      },
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        1,
+        2,
+        3
+      ],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-4",
+      "kind": "lab-result",
+      "text": "化验单 SYN-LAB-118：FC-1 箱 7 肌肉组织按 SYN-LCMS-01 方法检测，目标残留结果为检出。",
+      "refs": [
+        "FC-1"
+      ],
+      "lab_no": "SYN-LAB-118",
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        7
+      ],
+      "verdict": "detected",
+      "analyte": "目标残留",
+      "tissue": "肌肉组织",
+      "method": "SYN-LCMS-01",
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-5",
+      "kind": "lab-result",
+      "text": "化验单 SYN-LAB-121：FC-1 箱 5 肌肉组织按 SYN-LCMS-01 方法检测，目标残留未检出。",
+      "refs": [
+        "FC-1"
+      ],
+      "lab_no": "SYN-LAB-121",
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        5
+      ],
+      "verdict": "not_detected",
+      "analyte": "目标残留",
+      "tissue": "肌肉组织",
+      "method": "SYN-LCMS-01",
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-6",
+      "kind": "lab-result",
+      "text": "化验单 SYN-LAB-122：FC-1 箱 6 肌肉组织按 SYN-LCMS-01 方法检测，目标残留未检出。",
+      "refs": [
+        "FC-1"
+      ],
+      "lab_no": "SYN-LAB-122",
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        6
+      ],
+      "verdict": "not_detected",
+      "analyte": "目标残留",
+      "tissue": "肌肉组织",
+      "method": "SYN-LCMS-01",
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-7",
+      "kind": "voice-transcript",
+      "text": "语音转写（海星船老陈）：昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。",
+      "refs": [],
+      "lab_no": null,
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": {
+        "seq": 3,
+        "time_phrase": "昨晚",
+        "event_date": "2026-11-25",
+        "part_of_day": "夜间",
+        "raw": "第三网"
+      },
+      "extra_hauls": [
+        {
+          "seq": 2,
+          "time_phrase": "昨天傍晚",
+          "event_date": "2026-11-25",
+          "part_of_day": "傍晚",
+          "raw": "第二网"
+        }
+      ],
+      "species": [],
+      "boxes": [],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": "昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。",
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-8",
+      "kind": "market-update",
+      "text": "市场补报：海星（老陈船）昨天傍晚在石湾外口的第二网，鲳鱼货箱 1-3，今晨已进入平湖合成水产市场 A12 摊位。",
+      "refs": [],
+      "lab_no": null,
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [
+        "石湾外口"
+      ],
+      "unresolved_area_mentions": [],
+      "haul": {
+        "seq": 2,
+        "time_phrase": "昨天傍晚",
+        "event_date": "2026-11-25",
+        "part_of_day": "傍晚",
+        "raw": "第二网"
+      },
+      "extra_hauls": [],
+      "species": [
+        "鲳鱼"
+      ],
+      "boxes": [
+        1,
+        2,
+        3
+      ],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": "平湖合成水产市场A12摊位",
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-9",
+      "kind": "lab-result",
+      "text": "化验单 SYN-LAB-124：FC-1 箱 8 肌肉组织按 SYN-LCMS-01 方法检测，目标残留未检出。",
+      "refs": [
+        "FC-1"
+      ],
+      "lab_no": "SYN-LAB-124",
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        8
+      ],
+      "verdict": "not_detected",
+      "analyte": "目标残留",
+      "tissue": "肌肉组织",
+      "method": "SYN-LCMS-01",
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-10",
+      "kind": "catch-note",
+      "text": "石湾礁昨天下午第一网，带鱼箱 11-12；船名闽沙渔运06，货在船上待售。",
+      "refs": [],
+      "lab_no": null,
+      "cued_boat_name": "闽沙渔运06",
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [
+        "石湾礁"
+      ],
+      "unresolved_area_mentions": [],
+      "haul": {
+        "seq": 1,
+        "time_phrase": "昨天下午",
+        "event_date": "2026-11-25",
+        "part_of_day": "下午",
+        "raw": "第一网"
+      },
+      "extra_hauls": [],
+      "species": [
+        "带鱼"
+      ],
+      "boxes": [
+        11,
+        12
+      ],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": null,
+      "distribution": "货在船上待售",
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-11",
+      "kind": "voice-transcript",
+      "text": "语音转写：闽沙渔运06 的周老大说，前天还在石湾一带下过一网，箱数记不清。",
+      "refs": [],
+      "lab_no": null,
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [
+        "石湾一带"
+      ],
+      "unresolved_area_mentions": [
+        "石湾一带"
+      ],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-12",
+      "kind": "lab-result",
+      "text": "化验单 SYN-LAB-126：应补检要求，对 FC-1 箱 4 肌肉组织按 SYN-LCMS-01 方法采样检测，目标残留未检出；FC-2 的鳃组织结果不覆盖该肌肉部位。",
+      "refs": [
+        "FC-1",
+        "FC-2"
+      ],
+      "lab_no": "SYN-LAB-126",
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": null,
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [
+        4
+      ],
+      "verdict": "not_detected",
+      "analyte": "目标残留",
+      "tissue": "肌肉组织",
+      "method": "SYN-LCMS-01",
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": null,
+      "verification_lead_ref": null,
+      "confirmed_ref": null,
+      "excluded_ref": null,
+      "parse_notes": []
+    },
+    {
+      "record_id": "FC-13",
+      "kind": "verification",
+      "text": "采样核查 SV-1：经核对潮汐、网次与船名，FC-7 所说“昨天那片网”已确认是 FC-8 所报昨天傍晚第二网（海星老陈船）；与 FC-10 闽沙渔运06 的作业无关。两个网次仍分别建立批次、不得合并。",
+      "refs": [
+        "FC-7",
+        "FC-8",
+        "FC-10"
+      ],
+      "lab_no": null,
+      "cued_boat_name": null,
+      "another_boat": false,
+      "boat_name_mentions": [],
+      "operator_aliases": [],
+      "area_mentions": [],
+      "unresolved_area_mentions": [],
+      "haul": {
+        "seq": 2,
+        "time_phrase": "昨天傍晚",
+        "event_date": "2026-11-25",
+        "part_of_day": "傍晚",
+        "raw": "第二网"
+      },
+      "extra_hauls": [],
+      "species": [],
+      "boxes": [],
+      "verdict": null,
+      "analyte": null,
+      "tissue": null,
+      "method": null,
+      "market_place": null,
+      "distribution": null,
+      "claim_quote": "采样核查 SV-1：经核对潮汐、网次与船名，FC-7 所说“昨天那片网”已确认是 FC-8 所报昨天傍晚第二网（海星老陈船）；",
+      "verification_lead_ref": "FC-7",
+      "confirmed_ref": "FC-8",
+      "excluded_ref": "FC-10",
+      "parse_notes": []
+    }
+  ],
+  "batches": [
+    {
+      "id": "LOT-001",
+      "ordinal": 1,
+      "primary_record_id": "FC-1",
+      "source_record_ids": [
+        "FC-1"
+      ],
+      "boat_id": "B-1",
+      "boat_resolution": "pinned_by_case_link",
+      "area_id": "A-1",
+      "area_mention": "石湾外口",
+      "area_resolution": "resolved",
+      "event_date": "2026-11-25",
+      "part_of_day": "夜间",
+      "haul_seq": 3,
+      "species": [
+        "鲳鱼"
+      ],
+      "boxes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "market_place": null,
+      "distribution": null
+    },
+    {
+      "id": "LOT-002",
+      "ordinal": 2,
+      "primary_record_id": "FC-3",
+      "source_record_ids": [
+        "FC-3"
+      ],
+      "boat_id": "B-2",
+      "boat_resolution": "pinned_by_case_link",
+      "area_id": "A-2",
+      "area_mention": "南礁",
+      "area_resolution": "resolved",
+      "event_date": "2026-11-26",
+      "part_of_day": "早晨",
+      "haul_seq": 2,
+      "species": [],
+      "boxes": [
+        1,
+        2,
+        3
+      ],
+      "market_place": null,
+      "distribution": null
+    },
+    {
+      "id": "LOT-003",
+      "ordinal": 3,
+      "primary_record_id": "FC-8",
+      "source_record_ids": [
+        "FC-8"
+      ],
+      "boat_id": "B-1",
+      "boat_resolution": "pinned_by_case_link",
+      "area_id": "A-1",
+      "area_mention": "石湾外口",
+      "area_resolution": "resolved",
+      "event_date": "2026-11-25",
+      "part_of_day": "傍晚",
+      "haul_seq": 2,
+      "species": [
+        "鲳鱼"
+      ],
+      "boxes": [
+        1,
+        2,
+        3
+      ],
+      "market_place": "平湖合成水产市场A12摊位",
+      "distribution": null
+    },
+    {
+      "id": "LOT-004",
+      "ordinal": 4,
+      "primary_record_id": "FC-10",
+      "source_record_ids": [
+        "FC-10"
+      ],
+      "boat_id": "B-3",
+      "boat_resolution": "pinned_by_case_link",
+      "area_id": "A-3",
+      "area_mention": "石湾礁",
+      "area_resolution": "resolved",
+      "event_date": "2026-11-25",
+      "part_of_day": "下午",
+      "haul_seq": 1,
+      "species": [
+        "带鱼"
+      ],
+      "boxes": [
+        11,
+        12
+      ],
+      "market_place": null,
+      "distribution": "货在船上待售"
+    }
+  ],
+  "tests": [
+    {
+      "id": "T-001",
+      "ordinal": 1,
+      "record_id": "FC-2",
+      "lab_no": null,
+      "batch_id": "LOT-001",
+      "box": 4,
+      "tissue": "鳃组织",
+      "analyte": "目标残留",
+      "method": null,
+      "verdict": "not_detected",
+      "scope_statement": "FC-2 的“未检出”结论仅对实际送检样品有效：来源 LOT-001 箱 4，组织/部位为 鳃组织，指标 目标残留，方法 原文未载明；不自动延伸到同批其他箱、其他组织、其他网次、重名船或整船货。",
+      "qualifies_for_release": false,
+      "qualification_reasons": [
+        "受检部位‘鳃组织’不属于演练认可的放行部位 ['肌肉组织', '可食部']；该阴性结果只能说明该部位/样品的情况，不能支持整箱放行",
+        "原文未载明检测方法，无法确认是否属于认可方法"
+      ]
+    },
+    {
+      "id": "T-002",
+      "ordinal": 2,
+      "record_id": "FC-4",
+      "lab_no": "SYN-LAB-118",
+      "batch_id": "LOT-001",
+      "box": 7,
+      "tissue": "肌肉组织",
+      "analyte": "目标残留",
+      "method": "SYN-LCMS-01",
+      "verdict": "detected",
+      "scope_statement": "SYN-LAB-118 的“检出”结论仅对实际送检样品有效：来源 LOT-001 箱 7，组织/部位为 肌肉组织，指标 目标残留，方法 SYN-LCMS-01；不自动延伸到同批其他箱、其他组织、其他网次、重名船或整船货。",
+      "qualifies_for_release": false,
+      "qualification_reasons": [
+        "检出结果不支持放行，应支持对相应范围采取控制措施。"
+      ]
+    },
+    {
+      "id": "T-003",
+      "ordinal": 3,
+      "record_id": "FC-5",
+      "lab_no": "SYN-LAB-121",
+      "batch_id": "LOT-001",
+      "box": 5,
+      "tissue": "肌肉组织",
+      "analyte": "目标残留",
+      "method": "SYN-LCMS-01",
+      "verdict": "not_detected",
+      "scope_statement": "SYN-LAB-121 的“未检出”结论仅对实际送检样品有效：来源 LOT-001 箱 5，组织/部位为 肌肉组织，指标 目标残留，方法 SYN-LCMS-01；不自动延伸到同批其他箱、其他组织、其他网次、重名船或整船货。",
+      "qualifies_for_release": true,
+      "qualification_reasons": []
+    },
+    {
+      "id": "T-004",
+      "ordinal": 4,
+      "record_id": "FC-6",
+      "lab_no": "SYN-LAB-122",
+      "batch_id": "LOT-001",
+      "box": 6,
+      "tissue": "肌肉组织",
+      "analyte": "目标残留",
+      "method": "SYN-LCMS-01",
+      "verdict": "not_detected",
+      "scope_statement": "SYN-LAB-122 的“未检出”结论仅对实际送检样品有效：来源 LOT-001 箱 6，组织/部位为 肌肉组织，指标 目标残留，方法 SYN-LCMS-01；不自动延伸到同批其他箱、其他组织、其他网次、重名船或整船货。",
+      "qualifies_for_release": true,
+      "qualification_reasons": []
+    },
+    {
+      "id": "T-005",
+      "ordinal": 5,
+      "record_id": "FC-9",
+      "lab_no": "SYN-LAB-124",
+      "batch_id": "LOT-001",
+      "box": 8,
+      "tissue": "肌肉组织",
+      "analyte": "目标残留",
+      "method": "SYN-LCMS-01",
+      "verdict": "not_detected",
+      "scope_statement": "SYN-LAB-124 的“未检出”结论仅对实际送检样品有效：来源 LOT-001 箱 8，组织/部位为 肌肉组织，指标 目标残留，方法 SYN-LCMS-01；不自动延伸到同批其他箱、其他组织、其他网次、重名船或整船货。",
+      "qualifies_for_release": true,
+      "qualification_reasons": []
+    },
+    {
+      "id": "T-006",
+      "ordinal": 6,
+      "record_id": "FC-12",
+      "lab_no": "SYN-LAB-126",
+      "batch_id": "LOT-001",
+      "box": 4,
+      "tissue": "肌肉组织",
+      "analyte": "目标残留",
+      "method": "SYN-LCMS-01",
+      "verdict": "not_detected",
+      "scope_statement": "SYN-LAB-126 的“未检出”结论仅对实际送检样品有效：来源 LOT-001 箱 4，组织/部位为 肌肉组织，指标 目标残留，方法 SYN-LCMS-01；不自动延伸到同批其他箱、其他组织、其他网次、重名船或整船货。",
+      "qualifies_for_release": true,
+      "qualification_reasons": []
+    }
+  ],
+  "notices": [
+    {
+      "id": "NOTICE-001",
+      "ordinal": 1,
+      "action": "suspend",
+      "batch_id": "LOT-001",
+      "boxes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "title": "LOT-001 整网货批暂缓销售，逐箱定位风险",
+      "reason": "FC-4（SYN-LAB-118）在箱 7 肌肉组织 检出目标残留；同一网次其余箱在排查/补检完成前一并暂缓。",
+      "issued_after_record_id": "FC-4",
+      "evidence_record_ids": [
+        "FC-4"
+      ],
+      "test_record_ids": [
+        "FC-4"
+      ],
+      "lifts_notice_ids": []
+    },
+    {
+      "id": "NOTICE-002",
+      "ordinal": 2,
+      "action": "lift",
+      "batch_id": "LOT-001",
+      "boxes": [
+        5
+      ],
+      "title": "解除箱 5 的限制（局部解除，其余范围不变）",
+      "reason": "FC-5（SYN-LAB-121）对箱 5 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 5，原通知其余箱继续执行。",
+      "issued_after_record_id": "FC-5",
+      "evidence_record_ids": [
+        "FC-5"
+      ],
+      "test_record_ids": [
+        "FC-5"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ]
+    },
+    {
+      "id": "NOTICE-003",
+      "ordinal": 3,
+      "action": "lift",
+      "batch_id": "LOT-001",
+      "boxes": [
+        6
+      ],
+      "title": "解除箱 6 的限制（局部解除，其余范围不变）",
+      "reason": "FC-6（SYN-LAB-122）对箱 6 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 6，原通知其余箱继续执行。",
+      "issued_after_record_id": "FC-6",
+      "evidence_record_ids": [
+        "FC-6"
+      ],
+      "test_record_ids": [
+        "FC-6"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ]
+    },
+    {
+      "id": "NOTICE-004",
+      "ordinal": 4,
+      "action": "expand",
+      "batch_id": "LOT-003",
+      "boxes": [
+        1,
+        2,
+        3
+      ],
+      "title": "按模糊关联线索扩大核查，相关箱先暂停销售待采样",
+      "reason": "FC-7 称“昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。”；新到记录 FC-8 线索所述 2026-11-25 第 2 网与本批完全对应，且船主别称一致。但线索尚未经采样核查，故只作扩大核查暂控，不等同检出确认。",
+      "issued_after_record_id": "FC-8",
+      "evidence_record_ids": [
+        "FC-7",
+        "FC-8"
+      ],
+      "test_record_ids": [],
+      "lifts_notice_ids": []
+    },
+    {
+      "id": "NOTICE-005",
+      "ordinal": 5,
+      "action": "lift",
+      "batch_id": "LOT-001",
+      "boxes": [
+        8
+      ],
+      "title": "解除箱 8 的限制（局部解除，其余范围不变）",
+      "reason": "FC-9（SYN-LAB-124）对箱 8 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 8，原通知其余箱继续执行。",
+      "issued_after_record_id": "FC-9",
+      "evidence_record_ids": [
+        "FC-9"
+      ],
+      "test_record_ids": [
+        "FC-9"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ]
+    },
+    {
+      "id": "NOTICE-006",
+      "ordinal": 6,
+      "action": "lift",
+      "batch_id": "LOT-001",
+      "boxes": [
+        4
+      ],
+      "title": "解除箱 4 的限制（局部解除，其余范围不变）",
+      "reason": "FC-12（SYN-LAB-126）对箱 4 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 4，原通知其余箱继续执行。",
+      "issued_after_record_id": "FC-12",
+      "evidence_record_ids": [
+        "FC-12"
+      ],
+      "test_record_ids": [
+        "FC-12"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "kind": "record_received",
+      "at_record_id": "FC-1",
+      "message": "受理 FC-1（catch-note）：石湾外口昨晚第三网，鲳鱼箱 4-9；船名海星。…",
+      "notice_id": null
+    },
+    {
+      "seq": 2,
+      "kind": "batch_created",
+      "at_record_id": "FC-1",
+      "message": "建立批次 LOT-001：船 B-1 / 水域 A-1 / 第 3 网 / 箱 [4, 5, 6, 7, 8, 9]。",
+      "notice_id": null
+    },
+    {
+      "seq": 3,
+      "kind": "record_received",
+      "at_record_id": "FC-2",
+      "message": "受理 FC-2（lab-result）：石湾口样本未检出目标残留，样品为 FC-1 箱 4 的鳃组织。…",
+      "notice_id": null
+    },
+    {
+      "seq": 4,
+      "kind": "result_received",
+      "at_record_id": "FC-2",
+      "message": "登记检测 T-001：LOT-001 箱 4 / 鳃组织 / 未检出 / 可支持放行=False。",
+      "notice_id": null
+    },
+    {
+      "seq": 5,
+      "kind": "record_received",
+      "at_record_id": "FC-3",
+      "message": "受理 FC-3（market-update）：另一船海星：今晨南礁第二网，货箱 1-3。…",
+      "notice_id": null
+    },
+    {
+      "seq": 6,
+      "kind": "batch_created",
+      "at_record_id": "FC-3",
+      "message": "建立批次 LOT-002：船 B-2 / 水域 A-2 / 第 2 网 / 箱 [1, 2, 3]。",
+      "notice_id": null
+    },
+    {
+      "seq": 7,
+      "kind": "record_received",
+      "at_record_id": "FC-4",
+      "message": "受理 FC-4（lab-result）：化验单 SYN-LAB-118：FC-1 箱 7 肌肉组织按 SYN-LCMS-01…",
+      "notice_id": null
+    },
+    {
+      "seq": 8,
+      "kind": "result_received",
+      "at_record_id": "FC-4",
+      "message": "登记检测 T-002：LOT-001 箱 7 / 肌肉组织 / 检出 / 可支持放行=False。",
+      "notice_id": null
+    },
+    {
+      "seq": 9,
+      "kind": "notice_issued",
+      "at_record_id": "FC-4",
+      "message": "发出暂缓销售通知 NOTICE-001：LOT-001 箱 [4, 5, 6, 7, 8, 9]。LOT-001 整网货批暂缓销售，逐箱定位风险",
+      "notice_id": "NOTICE-001"
+    },
+    {
+      "seq": 10,
+      "kind": "record_received",
+      "at_record_id": "FC-5",
+      "message": "受理 FC-5（lab-result）：化验单 SYN-LAB-121：FC-1 箱 5 肌肉组织按 SYN-LCMS-01…",
+      "notice_id": null
+    },
+    {
+      "seq": 11,
+      "kind": "result_received",
+      "at_record_id": "FC-5",
+      "message": "登记检测 T-003：LOT-001 箱 5 / 肌肉组织 / 未检出 / 可支持放行=True。",
+      "notice_id": null
+    },
+    {
+      "seq": 12,
+      "kind": "notice_issued",
+      "at_record_id": "FC-5",
+      "message": "发出解除（部分）限制通知 NOTICE-002：LOT-001 箱 [5]。解除箱 5 的限制（局部解除，其余范围不变）",
+      "notice_id": "NOTICE-002"
+    },
+    {
+      "seq": 13,
+      "kind": "record_received",
+      "at_record_id": "FC-6",
+      "message": "受理 FC-6（lab-result）：化验单 SYN-LAB-122：FC-1 箱 6 肌肉组织按 SYN-LCMS-01…",
+      "notice_id": null
+    },
+    {
+      "seq": 14,
+      "kind": "result_received",
+      "at_record_id": "FC-6",
+      "message": "登记检测 T-004：LOT-001 箱 6 / 肌肉组织 / 未检出 / 可支持放行=True。",
+      "notice_id": null
+    },
+    {
+      "seq": 15,
+      "kind": "notice_issued",
+      "at_record_id": "FC-6",
+      "message": "发出解除（部分）限制通知 NOTICE-003：LOT-001 箱 [6]。解除箱 6 的限制（局部解除，其余范围不变）",
+      "notice_id": "NOTICE-003"
+    },
+    {
+      "seq": 16,
+      "kind": "record_received",
+      "at_record_id": "FC-7",
+      "message": "受理 FC-7（voice-transcript）：语音转写（海星船老陈）：昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、…",
+      "notice_id": null
+    },
+    {
+      "seq": 17,
+      "kind": "lead_opened",
+      "at_record_id": "FC-7",
+      "message": "登记模糊关联线索 LEAD-001：原话“昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。”；提及船只 ['B-1', 'B-3']。线索不是已核实事实，禁止据此并批。",
+      "notice_id": null
+    },
+    {
+      "seq": 18,
+      "kind": "record_received",
+      "at_record_id": "FC-8",
+      "message": "受理 FC-8（market-update）：市场补报：海星（老陈船）昨天傍晚在石湾外口的第二网，鲳鱼货箱 1-3，今晨已进入平湖…",
+      "notice_id": null
+    },
+    {
+      "seq": 19,
+      "kind": "batch_created",
+      "at_record_id": "FC-8",
+      "message": "建立批次 LOT-003：船 B-1 / 水域 A-1 / 第 2 网 / 箱 [1, 2, 3]。",
+      "notice_id": null
+    },
+    {
+      "seq": 20,
+      "kind": "notice_issued",
+      "at_record_id": "FC-8",
+      "message": "发出扩大核查/暂控通知 NOTICE-004：LOT-003 箱 [1, 2, 3]。按模糊关联线索扩大核查，相关箱先暂停销售待采样",
+      "notice_id": "NOTICE-004"
+    },
+    {
+      "seq": 21,
+      "kind": "record_received",
+      "at_record_id": "FC-9",
+      "message": "受理 FC-9（lab-result）：化验单 SYN-LAB-124：FC-1 箱 8 肌肉组织按 SYN-LCMS-01…",
+      "notice_id": null
+    },
+    {
+      "seq": 22,
+      "kind": "result_received",
+      "at_record_id": "FC-9",
+      "message": "登记检测 T-005：LOT-001 箱 8 / 肌肉组织 / 未检出 / 可支持放行=True。",
+      "notice_id": null
+    },
+    {
+      "seq": 23,
+      "kind": "notice_issued",
+      "at_record_id": "FC-9",
+      "message": "发出解除（部分）限制通知 NOTICE-005：LOT-001 箱 [8]。解除箱 8 的限制（局部解除，其余范围不变）",
+      "notice_id": "NOTICE-005"
+    },
+    {
+      "seq": 24,
+      "kind": "record_received",
+      "at_record_id": "FC-10",
+      "message": "受理 FC-10（catch-note）：石湾礁昨天下午第一网，带鱼箱 11-12；船名闽沙渔运06，货在船上待售。…",
+      "notice_id": null
+    },
+    {
+      "seq": 25,
+      "kind": "batch_created",
+      "at_record_id": "FC-10",
+      "message": "建立批次 LOT-004：船 B-3 / 水域 A-3 / 第 1 网 / 箱 [11, 12]。",
+      "notice_id": null
+    },
+    {
+      "seq": 26,
+      "kind": "record_received",
+      "at_record_id": "FC-11",
+      "message": "受理 FC-11（voice-transcript）：语音转写：闽沙渔运06 的周老大说，前天还在石湾一带下过一网，箱数记不清。…",
+      "notice_id": null
+    },
+    {
+      "seq": 27,
+      "kind": "record_received",
+      "at_record_id": "FC-12",
+      "message": "受理 FC-12（lab-result）：化验单 SYN-LAB-126：应补检要求，对 FC-1 箱 4 肌肉组织按 SYN…",
+      "notice_id": null
+    },
+    {
+      "seq": 28,
+      "kind": "result_received",
+      "at_record_id": "FC-12",
+      "message": "登记检测 T-006：LOT-001 箱 4 / 肌肉组织 / 未检出 / 可支持放行=True。",
+      "notice_id": null
+    },
+    {
+      "seq": 29,
+      "kind": "notice_issued",
+      "at_record_id": "FC-12",
+      "message": "发出解除（部分）限制通知 NOTICE-006：LOT-001 箱 [4]。解除箱 4 的限制（局部解除，其余范围不变）",
+      "notice_id": "NOTICE-006"
+    },
+    {
+      "seq": 30,
+      "kind": "record_received",
+      "at_record_id": "FC-13",
+      "message": "受理 FC-13（verification）：采样核查 SV-1：经核对潮汐、网次与船名，FC-7 所说“昨天那片网”已确认是 F…",
+      "notice_id": null
+    },
+    {
+      "seq": 31,
+      "kind": "verification_recorded",
+      "at_record_id": "FC-13",
+      "message": "受理采样核查结论：确认 FC-8，排除 FC-10。",
+      "notice_id": null
+    }
+  ],
+  "leads": [
+    {
+      "id": "LEAD-001",
+      "ordinal": 1,
+      "source_record_id": "FC-7",
+      "quote": "昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。",
+      "hypotheses": [
+        "解释一：指向同一潮汐、同一船相邻网次（待采样核对网次/潮汐记录）",
+        "解释二：指向邻船的另一次独立作业（船名、水域、时间均需核对）",
+        "在核实前两种解释不得相互替代，也不得把相关批次合并。"
+      ],
+      "boat_ids": [
+        "B-1",
+        "B-3"
+      ],
+      "candidate_batch_ids": [
+        "LOT-001",
+        "LOT-003",
+        "LOT-004"
+      ],
+      "status": "verified",
+      "verification_record_id": "FC-13",
+      "confirmed_batch_ids": [
+        "LOT-003"
+      ],
+      "excluded_batch_ids": [
+        "LOT-004"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "ISSUE-001",
+      "ordinal": 1,
+      "record_id": "FC-2",
+      "code": "PARSE_NOTE",
+      "severity": "note",
+      "message": "原文未载明检测方法"
+    },
+    {
+      "id": "ISSUE-002",
+      "ordinal": 2,
+      "record_id": "FC-2",
+      "code": "NEGATIVE_SCOPE_LIMITED",
+      "severity": "note",
+      "message": "受检部位‘鳃组织’不属于演练认可的放行部位 ['肌肉组织', '可食部']；该阴性结果只能说明该部位/样品的情况，不能支持整箱放行；原文未载明检测方法，无法确认是否属于认可方法。因此 FC-2 不支持解除 LOT-001 箱 4 的销售限制，需按认可部位/方法补检。"
+    },
+    {
+      "id": "ISSUE-003",
+      "ordinal": 3,
+      "record_id": "FC-11",
+      "code": "AREA_UNRESOLVED",
+      "severity": "warning",
+      "message": "水域称谓‘石湾一带’不在 waters 规范名/显式别名表中；禁止按‘石湾’等子串并入 A-1，需采样人员核对具体口门。"
+    }
+  ],
+  "actions": [
+    {
+      "id": "TASK-001",
+      "ordinal": 1,
+      "kind": "sampling",
+      "priority": "high",
+      "title": "LOT-001 缺样/补检与覆盖核对",
+      "reason": "批次建立后尚无覆盖全部箱位的认可检测；需逐箱落实样品。",
+      "suggested_procedure": "按箱采集肌肉/可食部，使用 SYN-LCMS-01 方法检测目标残留；采样记录须写明船号、水域、日期、网次与箱号。",
+      "status": "open",
+      "batch_id": "LOT-001",
+      "boxes_open": [
+        9
+      ],
+      "closures": [
+        {
+          "box": 5,
+          "record_id": "FC-5",
+          "test_id": "T-003",
+          "note": "认可部位与方法的未检出结果，支持该箱解除限制"
+        },
+        {
+          "box": 6,
+          "record_id": "FC-6",
+          "test_id": "T-004",
+          "note": "认可部位与方法的未检出结果，支持该箱解除限制"
+        },
+        {
+          "box": 8,
+          "record_id": "FC-9",
+          "test_id": "T-005",
+          "note": "认可部位与方法的未检出结果，支持该箱解除限制"
+        },
+        {
+          "box": 4,
+          "record_id": "FC-12",
+          "test_id": "T-006",
+          "note": "认可部位与方法的未检出结果，支持该箱解除限制"
+        }
+      ],
+      "return_to": {
+        "boat_id": "B-1",
+        "name": "海星",
+        "registry_no": "SYN-ZY-0107（合成船号）",
+        "operator": "陈阿海",
+        "role": "船长兼船主",
+        "contact": "合成演练电话 138-0000-0107",
+        "berth": "石湾合成码头 3 号泊位"
+      },
+      "verify_with": null,
+      "linked_notice_ids": [
+        "NOTICE-001"
+      ],
+      "closed_by_record_id": null
+    },
+    {
+      "id": "TASK-002",
+      "ordinal": 2,
+      "kind": "sampling",
+      "priority": "normal",
+      "title": "LOT-002 缺样/补检与覆盖核对",
+      "reason": "批次建立后尚无覆盖全部箱位的认可检测；需逐箱落实样品。",
+      "suggested_procedure": "按箱采集肌肉/可食部，使用 SYN-LCMS-01 方法检测目标残留；采样记录须写明船号、水域、日期、网次与箱号。",
+      "status": "open",
+      "batch_id": "LOT-002",
+      "boxes_open": [
+        1,
+        2,
+        3
+      ],
+      "closures": [],
+      "return_to": {
+        "boat_id": "B-2",
+        "name": "海星",
+        "registry_no": "SYN-ZY-0226（合成船号）",
+        "operator": "林秀",
+        "role": "船长",
+        "contact": "合成演练电话 138-0000-0226",
+        "berth": "南礁补网点 2 号浮排"
+      },
+      "verify_with": null,
+      "linked_notice_ids": [],
+      "closed_by_record_id": null
+    },
+    {
+      "id": "TASK-003",
+      "ordinal": 3,
+      "kind": "lead_verification",
+      "priority": "high",
+      "title": "核实 LEAD-001“昨天那片网”的真实指向",
+      "reason": "语音表述存在同潮相邻网次/邻船独立作业两种解释，需采样人员回溯样品对应位置与网次。 已由 FC-13 核查：确认 LOT-003，排除 LOT-004；批次仍保持独立编号。",
+      "suggested_procedure": "找到 B-1 船长核对潮汐、网次时间与定位；同时向被提及的邻船 B-3 核对同一时段作业水域；形成书面核查记录（引用 FC 编号）后再决定扩查范围。",
+      "status": "closed",
+      "batch_id": null,
+      "boxes_open": [],
+      "closures": [],
+      "return_to": null,
+      "verify_with": {
+        "boat_id": "B-1",
+        "name": "海星",
+        "registry_no": "SYN-ZY-0107（合成船号）",
+        "operator": "陈阿海",
+        "role": "船长兼船主",
+        "contact": "合成演练电话 138-0000-0107",
+        "berth": "石湾合成码头 3 号泊位"
+      },
+      "linked_notice_ids": [],
+      "closed_by_record_id": "FC-13"
+    },
+    {
+      "id": "TASK-004",
+      "ordinal": 4,
+      "kind": "sampling",
+      "priority": "high",
+      "title": "LOT-003 缺样/补检与覆盖核对",
+      "reason": "批次建立后尚无覆盖全部箱位的认可检测；需逐箱落实样品。",
+      "suggested_procedure": "按箱采集肌肉/可食部，使用 SYN-LCMS-01 方法检测目标残留；采样记录须写明船号、水域、日期、网次与箱号。",
+      "status": "open",
+      "batch_id": "LOT-003",
+      "boxes_open": [
+        1,
+        2,
+        3
+      ],
+      "closures": [],
+      "return_to": {
+        "boat_id": "B-1",
+        "name": "海星",
+        "registry_no": "SYN-ZY-0107（合成船号）",
+        "operator": "陈阿海",
+        "role": "船长兼船主",
+        "contact": "合成演练电话 138-0000-0107",
+        "berth": "石湾合成码头 3 号泊位"
+      },
+      "verify_with": null,
+      "linked_notice_ids": [
+        "NOTICE-004"
+      ],
+      "closed_by_record_id": null
+    },
+    {
+      "id": "TASK-005",
+      "ordinal": 5,
+      "kind": "sampling",
+      "priority": "normal",
+      "title": "LOT-004 缺样/补检与覆盖核对",
+      "reason": "批次建立后尚无覆盖全部箱位的认可检测；需逐箱落实样品。",
+      "suggested_procedure": "按箱采集肌肉/可食部，使用 SYN-LCMS-01 方法检测目标残留；采样记录须写明船号、水域、日期、网次与箱号。",
+      "status": "open",
+      "batch_id": "LOT-004",
+      "boxes_open": [
+        11,
+        12
+      ],
+      "closures": [],
+      "return_to": {
+        "boat_id": "B-3",
+        "name": "闽沙渔运06",
+        "registry_no": "闽沙渔运06（合成编号）",
+        "operator": "周德发",
+        "role": "船主",
+        "contact": "合成演练电话 139-0000-0006",
+        "berth": "石湾礁临时卸货点"
+      },
+      "verify_with": null,
+      "linked_notice_ids": [],
+      "closed_by_record_id": null
+    },
+    {
+      "id": "TASK-006",
+      "ordinal": 6,
+      "kind": "clarify_record",
+      "priority": "normal",
+      "title": "补清 FC-11 所述无法建批的作业信息",
+      "reason": "记录提到一次作业，但水域为泛称/近名或缺少箱号，尚不能建立可检验批次。",
+      "suggested_procedure": "向当事船补问日期、水域、网次、物种、箱数与去向，再决定是否建批抽检。",
+      "status": "open",
+      "batch_id": null,
+      "boxes_open": [],
+      "closures": [],
+      "return_to": null,
+      "verify_with": {
+        "boat_id": "B-3",
+        "name": "闽沙渔运06",
+        "registry_no": "闽沙渔运06（合成编号）",
+        "operator": "周德发",
+        "role": "船主",
+        "contact": "合成演练电话 139-0000-0006",
+        "berth": "石湾礁临时卸货点"
+      },
+      "linked_notice_ids": [],
+      "closed_by_record_id": null
+    }
+  ],
+  "box_views": [
+    {
+      "batch_id": "LOT-001",
+      "box": 4,
+      "status": "released_lifted",
+      "status_label": "解除限制·已有解除通知",
+      "test_record_ids": [
+        "FC-2",
+        "FC-12"
+      ],
+      "active_notice_ids": [],
+      "lift_notice_ids": [
+        "NOTICE-006"
+      ],
+      "missing_qualifying_sample": false
+    },
+    {
+      "batch_id": "LOT-001",
+      "box": 5,
+      "status": "released_lifted",
+      "status_label": "解除限制·已有解除通知",
+      "test_record_ids": [
+        "FC-5"
+      ],
+      "active_notice_ids": [],
+      "lift_notice_ids": [
+        "NOTICE-002"
+      ],
+      "missing_qualifying_sample": false
+    },
+    {
+      "batch_id": "LOT-001",
+      "box": 6,
+      "status": "released_lifted",
+      "status_label": "解除限制·已有解除通知",
+      "test_record_ids": [
+        "FC-6"
+      ],
+      "active_notice_ids": [],
+      "lift_notice_ids": [
+        "NOTICE-003"
+      ],
+      "missing_qualifying_sample": false
+    },
+    {
+      "batch_id": "LOT-001",
+      "box": 7,
+      "status": "suspended_confirmed",
+      "status_label": "暂缓销售·检出结果支持",
+      "test_record_ids": [
+        "FC-4"
+      ],
+      "active_notice_ids": [
+        "NOTICE-001"
+      ],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": false
+    },
+    {
+      "batch_id": "LOT-001",
+      "box": 8,
+      "status": "released_lifted",
+      "status_label": "解除限制·已有解除通知",
+      "test_record_ids": [
+        "FC-9"
+      ],
+      "active_notice_ids": [],
+      "lift_notice_ids": [
+        "NOTICE-005"
+      ],
+      "missing_qualifying_sample": false
+    },
+    {
+      "batch_id": "LOT-001",
+      "box": 9,
+      "status": "hold_pending_sample",
+      "status_label": "暂缓/暂控·同批扩查且缺合格样",
+      "test_record_ids": [],
+      "active_notice_ids": [
+        "NOTICE-001"
+      ],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-002",
+      "box": 1,
+      "status": "circulating",
+      "status_label": "可继续流通·无受限记录",
+      "test_record_ids": [],
+      "active_notice_ids": [],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-002",
+      "box": 2,
+      "status": "circulating",
+      "status_label": "可继续流通·无受限记录",
+      "test_record_ids": [],
+      "active_notice_ids": [],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-002",
+      "box": 3,
+      "status": "circulating",
+      "status_label": "可继续流通·无受限记录",
+      "test_record_ids": [],
+      "active_notice_ids": [],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-003",
+      "box": 1,
+      "status": "verification_hold",
+      "status_label": "扩大核查·线索待核实的暂控",
+      "test_record_ids": [],
+      "active_notice_ids": [
+        "NOTICE-004"
+      ],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-003",
+      "box": 2,
+      "status": "verification_hold",
+      "status_label": "扩大核查·线索待核实的暂控",
+      "test_record_ids": [],
+      "active_notice_ids": [
+        "NOTICE-004"
+      ],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-003",
+      "box": 3,
+      "status": "verification_hold",
+      "status_label": "扩大核查·线索待核实的暂控",
+      "test_record_ids": [],
+      "active_notice_ids": [
+        "NOTICE-004"
+      ],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-004",
+      "box": 11,
+      "status": "circulating",
+      "status_label": "可继续流通·无受限记录",
+      "test_record_ids": [],
+      "active_notice_ids": [],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    },
+    {
+      "batch_id": "LOT-004",
+      "box": 12,
+      "status": "circulating",
+      "status_label": "可继续流通·无受限记录",
+      "test_record_ids": [],
+      "active_notice_ids": [],
+      "lift_notice_ids": [],
+      "missing_qualifying_sample": true
+    }
+  ],
+  "batch_views": [
+    {
+      "batch_id": "LOT-001",
+      "disposition": "local_suspension",
+      "disposition_label": "局部暂缓（部分箱仍受限，其余可流通/已解除）",
+      "box_views": [
+        {
+          "batch_id": "LOT-001",
+          "box": 4,
+          "status": "released_lifted",
+          "status_label": "解除限制·已有解除通知",
+          "test_record_ids": [
+            "FC-2",
+            "FC-12"
+          ],
+          "active_notice_ids": [],
+          "lift_notice_ids": [
+            "NOTICE-006"
+          ],
+          "missing_qualifying_sample": false
+        },
+        {
+          "batch_id": "LOT-001",
+          "box": 5,
+          "status": "released_lifted",
+          "status_label": "解除限制·已有解除通知",
+          "test_record_ids": [
+            "FC-5"
+          ],
+          "active_notice_ids": [],
+          "lift_notice_ids": [
+            "NOTICE-002"
+          ],
+          "missing_qualifying_sample": false
+        },
+        {
+          "batch_id": "LOT-001",
+          "box": 6,
+          "status": "released_lifted",
+          "status_label": "解除限制·已有解除通知",
+          "test_record_ids": [
+            "FC-6"
+          ],
+          "active_notice_ids": [],
+          "lift_notice_ids": [
+            "NOTICE-003"
+          ],
+          "missing_qualifying_sample": false
+        },
+        {
+          "batch_id": "LOT-001",
+          "box": 7,
+          "status": "suspended_confirmed",
+          "status_label": "暂缓销售·检出结果支持",
+          "test_record_ids": [
+            "FC-4"
+          ],
+          "active_notice_ids": [
+            "NOTICE-001"
+          ],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": false
+        },
+        {
+          "batch_id": "LOT-001",
+          "box": 8,
+          "status": "released_lifted",
+          "status_label": "解除限制·已有解除通知",
+          "test_record_ids": [
+            "FC-9"
+          ],
+          "active_notice_ids": [],
+          "lift_notice_ids": [
+            "NOTICE-005"
+          ],
+          "missing_qualifying_sample": false
+        },
+        {
+          "batch_id": "LOT-001",
+          "box": 9,
+          "status": "hold_pending_sample",
+          "status_label": "暂缓/暂控·同批扩查且缺合格样",
+          "test_record_ids": [],
+          "active_notice_ids": [
+            "NOTICE-001"
+          ],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        }
+      ],
+      "restricted_boxes": [
+        7,
+        9
+      ],
+      "released_boxes": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "unsampled_boxes": [
+        9
+      ],
+      "supporting_test_record_ids": [
+        "FC-2",
+        "FC-4",
+        "FC-5",
+        "FC-6",
+        "FC-9",
+        "FC-12"
+      ],
+      "notice_ids": [
+        "NOTICE-001",
+        "NOTICE-002",
+        "NOTICE-003",
+        "NOTICE-005",
+        "NOTICE-006"
+      ]
+    },
+    {
+      "batch_id": "LOT-002",
+      "disposition": "circulate_with_routine_sampling",
+      "disposition_label": "可继续流通（无风险证据，列入常规补检）",
+      "box_views": [
+        {
+          "batch_id": "LOT-002",
+          "box": 1,
+          "status": "circulating",
+          "status_label": "可继续流通·无受限记录",
+          "test_record_ids": [],
+          "active_notice_ids": [],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        },
+        {
+          "batch_id": "LOT-002",
+          "box": 2,
+          "status": "circulating",
+          "status_label": "可继续流通·无受限记录",
+          "test_record_ids": [],
+          "active_notice_ids": [],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        },
+        {
+          "batch_id": "LOT-002",
+          "box": 3,
+          "status": "circulating",
+          "status_label": "可继续流通·无受限记录",
+          "test_record_ids": [],
+          "active_notice_ids": [],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        }
+      ],
+      "restricted_boxes": [],
+      "released_boxes": [
+        1,
+        2,
+        3
+      ],
+      "unsampled_boxes": [
+        1,
+        2,
+        3
+      ],
+      "supporting_test_record_ids": [],
+      "notice_ids": []
+    },
+    {
+      "batch_id": "LOT-003",
+      "disposition": "expanded_verification",
+      "disposition_label": "扩大核查（关联线索，市场暂控待采样核实）",
+      "box_views": [
+        {
+          "batch_id": "LOT-003",
+          "box": 1,
+          "status": "verification_hold",
+          "status_label": "扩大核查·线索待核实的暂控",
+          "test_record_ids": [],
+          "active_notice_ids": [
+            "NOTICE-004"
+          ],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        },
+        {
+          "batch_id": "LOT-003",
+          "box": 2,
+          "status": "verification_hold",
+          "status_label": "扩大核查·线索待核实的暂控",
+          "test_record_ids": [],
+          "active_notice_ids": [
+            "NOTICE-004"
+          ],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        },
+        {
+          "batch_id": "LOT-003",
+          "box": 3,
+          "status": "verification_hold",
+          "status_label": "扩大核查·线索待核实的暂控",
+          "test_record_ids": [],
+          "active_notice_ids": [
+            "NOTICE-004"
+          ],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        }
+      ],
+      "restricted_boxes": [
+        1,
+        2,
+        3
+      ],
+      "released_boxes": [],
+      "unsampled_boxes": [
+        1,
+        2,
+        3
+      ],
+      "supporting_test_record_ids": [],
+      "notice_ids": [
+        "NOTICE-004"
+      ]
+    },
+    {
+      "batch_id": "LOT-004",
+      "disposition": "circulate_with_routine_sampling",
+      "disposition_label": "可继续流通（无风险证据，列入常规补检）",
+      "box_views": [
+        {
+          "batch_id": "LOT-004",
+          "box": 11,
+          "status": "circulating",
+          "status_label": "可继续流通·无受限记录",
+          "test_record_ids": [],
+          "active_notice_ids": [],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        },
+        {
+          "batch_id": "LOT-004",
+          "box": 12,
+          "status": "circulating",
+          "status_label": "可继续流通·无受限记录",
+          "test_record_ids": [],
+          "active_notice_ids": [],
+          "lift_notice_ids": [],
+          "missing_qualifying_sample": true
+        }
+      ],
+      "restricted_boxes": [],
+      "released_boxes": [
+        11,
+        12
+      ],
+      "unsampled_boxes": [
+        11,
+        12
+      ],
+      "supporting_test_record_ids": [],
+      "notice_ids": []
+    }
+  ],
+  "evidence_matrix": [
+    {
+      "row_type": "batch_current_decision",
+      "batch_id": "LOT-001",
+      "source_record_ids": [
+        "FC-1"
+      ],
+      "decision_code": "local_suspension",
+      "decision": "局部暂缓（部分箱仍受限，其余可流通/已解除）",
+      "restricted_boxes": [
+        7,
+        9
+      ],
+      "released_boxes": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "boxes_still_missing_qualifying_sample": [
+        9
+      ],
+      "supporting_test_record_ids": [
+        "FC-2",
+        "FC-4",
+        "FC-5",
+        "FC-6",
+        "FC-9",
+        "FC-12"
+      ],
+      "supporting_notice_ids": [
+        "NOTICE-001",
+        "NOTICE-002",
+        "NOTICE-003",
+        "NOTICE-005",
+        "NOTICE-006"
+      ]
+    },
+    {
+      "row_type": "batch_current_decision",
+      "batch_id": "LOT-002",
+      "source_record_ids": [
+        "FC-3"
+      ],
+      "decision_code": "circulate_with_routine_sampling",
+      "decision": "可继续流通（无风险证据，列入常规补检）",
+      "restricted_boxes": [],
+      "released_boxes": [
+        1,
+        2,
+        3
+      ],
+      "boxes_still_missing_qualifying_sample": [
+        1,
+        2,
+        3
+      ],
+      "supporting_test_record_ids": [],
+      "supporting_notice_ids": []
+    },
+    {
+      "row_type": "batch_current_decision",
+      "batch_id": "LOT-003",
+      "source_record_ids": [
+        "FC-8"
+      ],
+      "decision_code": "expanded_verification",
+      "decision": "扩大核查（关联线索，市场暂控待采样核实）",
+      "restricted_boxes": [
+        1,
+        2,
+        3
+      ],
+      "released_boxes": [],
+      "boxes_still_missing_qualifying_sample": [
+        1,
+        2,
+        3
+      ],
+      "supporting_test_record_ids": [],
+      "supporting_notice_ids": [
+        "NOTICE-004"
+      ]
+    },
+    {
+      "row_type": "batch_current_decision",
+      "batch_id": "LOT-004",
+      "source_record_ids": [
+        "FC-10"
+      ],
+      "decision_code": "circulate_with_routine_sampling",
+      "decision": "可继续流通（无风险证据，列入常规补检）",
+      "restricted_boxes": [],
+      "released_boxes": [
+        11,
+        12
+      ],
+      "boxes_still_missing_qualifying_sample": [
+        11,
+        12
+      ],
+      "supporting_test_record_ids": [],
+      "supporting_notice_ids": []
+    },
+    {
+      "row_type": "notice_decision",
+      "notice_id": "NOTICE-001",
+      "action_code": "suspend",
+      "action": "暂缓销售通知",
+      "batch_id": "LOT-001",
+      "boxes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "derived_state_code": "partially_lifted",
+      "derived_state": "部分箱已解除，余量仍执行",
+      "issued_after_record_id": "FC-4",
+      "evidence_record_ids": [
+        "FC-4"
+      ],
+      "supporting_test_record_ids": [
+        "FC-4"
+      ],
+      "lifts_notice_ids": [],
+      "reason": "FC-4（SYN-LAB-118）在箱 7 肌肉组织 检出目标残留；同一网次其余箱在排查/补检完成前一并暂缓。"
+    },
+    {
+      "row_type": "notice_decision",
+      "notice_id": "NOTICE-002",
+      "action_code": "lift",
+      "action": "解除（部分）限制通知",
+      "batch_id": "LOT-001",
+      "boxes": [
+        5
+      ],
+      "derived_state_code": "effective",
+      "derived_state": "解除通知已发出并生效（永久归档）",
+      "issued_after_record_id": "FC-5",
+      "evidence_record_ids": [
+        "FC-5"
+      ],
+      "supporting_test_record_ids": [
+        "FC-5"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ],
+      "reason": "FC-5（SYN-LAB-121）对箱 5 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 5，原通知其余箱继续执行。"
+    },
+    {
+      "row_type": "notice_decision",
+      "notice_id": "NOTICE-003",
+      "action_code": "lift",
+      "action": "解除（部分）限制通知",
+      "batch_id": "LOT-001",
+      "boxes": [
+        6
+      ],
+      "derived_state_code": "effective",
+      "derived_state": "解除通知已发出并生效（永久归档）",
+      "issued_after_record_id": "FC-6",
+      "evidence_record_ids": [
+        "FC-6"
+      ],
+      "supporting_test_record_ids": [
+        "FC-6"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ],
+      "reason": "FC-6（SYN-LAB-122）对箱 6 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 6，原通知其余箱继续执行。"
+    },
+    {
+      "row_type": "notice_decision",
+      "notice_id": "NOTICE-004",
+      "action_code": "expand",
+      "action": "扩大核查/暂控通知",
+      "batch_id": "LOT-003",
+      "boxes": [
+        1,
+        2,
+        3
+      ],
+      "derived_state_code": "in_force",
+      "derived_state": "仍在执行",
+      "issued_after_record_id": "FC-8",
+      "evidence_record_ids": [
+        "FC-7",
+        "FC-8"
+      ],
+      "supporting_test_record_ids": [],
+      "lifts_notice_ids": [],
+      "reason": "FC-7 称“昨天那片网也有！昨晚第三网和昨天傍晚第二网，可能是同一片水、同一潮的作业；也有人说那是邻船闽沙渔运06 昨天下午的网。”；新到记录 FC-8 线索所述 2026-11-25 第 2 网与本批完全对应，且船主别称一致。但线索尚未经采样核查，故只作扩大核查暂控，不等同检出确认。"
+    },
+    {
+      "row_type": "notice_decision",
+      "notice_id": "NOTICE-005",
+      "action_code": "lift",
+      "action": "解除（部分）限制通知",
+      "batch_id": "LOT-001",
+      "boxes": [
+        8
+      ],
+      "derived_state_code": "effective",
+      "derived_state": "解除通知已发出并生效（永久归档）",
+      "issued_after_record_id": "FC-9",
+      "evidence_record_ids": [
+        "FC-9"
+      ],
+      "supporting_test_record_ids": [
+        "FC-9"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ],
+      "reason": "FC-9（SYN-LAB-124）对箱 8 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 8，原通知其余箱继续执行。"
+    },
+    {
+      "row_type": "notice_decision",
+      "notice_id": "NOTICE-006",
+      "action_code": "lift",
+      "action": "解除（部分）限制通知",
+      "batch_id": "LOT-001",
+      "boxes": [
+        4
+      ],
+      "derived_state_code": "effective",
+      "derived_state": "解除通知已发出并生效（永久归档）",
+      "issued_after_record_id": "FC-12",
+      "evidence_record_ids": [
+        "FC-12"
+      ],
+      "supporting_test_record_ids": [
+        "FC-12"
+      ],
+      "lifts_notice_ids": [
+        "NOTICE-001"
+      ],
+      "reason": "FC-12（SYN-LAB-126）对箱 4 肌肉组织、按 SYN-LCMS-01 检测目标残留未检出，符合演练放行条件；仅解除箱 4，原通知其余箱继续执行。"
+    }
+  ]
+}
